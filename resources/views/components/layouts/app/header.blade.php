@@ -101,6 +101,9 @@
                     <flux:navlist.item icon="layout-grid" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                     {{ __('Dashboard') }}
                     </flux:navlist.item>
+                    <flux:navlist.item icon="beaker" :href="route('allergeen.index')" :current="request()->routeIs('allergeen.*')" wire:navigate>
+                    {{ __('Allergenen') }}
+                    </flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
 
