@@ -29,6 +29,9 @@
                 <flux:navlist.item icon="pencil-square" :href="route('leveranciers.index')"
                     :current="request()->routeIs('leveranciers.*')" wire:navigate>{{ __('Leveranciers') }}
                 </flux:navlist.item>
+                <flux:navlist.item icon="clipboard-document-list" :href="route('delivery.overview')"
+                    :current="request()->routeIs('delivery.*')" wire:navigate>{{ __('Overzicht geleverde producten') }}
+                </flux:navlist.item>
             </flux:navlist.group>
         </flux:navlist>
 
